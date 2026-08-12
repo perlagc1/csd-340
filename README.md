@@ -1,5 +1,5 @@
 # CSD 340 Web Development with HTML and CSS
 
 ## Contributors
-- Instructor: <your instructor’s name>
+- Instructor: <Sue Sampson>
 - Perla Garcia Cavazos
