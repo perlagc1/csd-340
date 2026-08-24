@@ -1,0 +1,43 @@
+/* 
+    Author: Perla Garcia Cavazos
+    Date: 08/24/2026
+    Assignment: Module 4.2 – Build a Web Page Exercise, Part 4
+*/
+
+#container {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(120, 30, 200, 0.8);
+}
+
+#image-gallery {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item h3 {
+    text-align: center;
+    color: rgba(0, 120, 255, 0.8);
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .75em;
+    color: rgba(255, 80, 80, 0.8);
+}
+
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
