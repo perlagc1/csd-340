@@ -1,0 +1,32 @@
+/* 
+Name: Perla Garcia Cavazos
+Date: August 18, 2026
+Assignment: Module 2.2 – GitHub Pages Landing Page
+*/
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    background-color: #4A90E2; /* change if you want */
+    color: white;
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+a {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D6A800;
+}
+
+a:visited {
+    color: #7B61FF;
+}
