@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+  Name: Perla Garcia Cavazos
+  Date: September 26, 2026
+  Assignment: Module 9.3 – JavaScript Exercise, Part 1
+  -->
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Assignment 9.3 JavaScript Exercise Part 1">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bellevue University, CSD340">
+  <meta name="author" content="Perla Garcia Cavazos">
+
+  <link rel="stylesheet" href="../module-2/GarciaCavazos_Mod2_2.css">
+
+  <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+
+<body>
+  <div id="container">
+
+    <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+    <h2>Chapter 1: About Me</h2>
+
+    <p>
+      I grew up in Reynosa, Mexico, and later moved to Lexington, Nebraska.
+      Moving to a new place gave me the opportunity to experience a different
+      environment and create a new life for myself and my family.
+    </p>
+
+    <p>
+      I have always enjoyed learning new things, especially when it comes to
+      technology. Over the years, I became interested in how websites and
+      computer programs work. That curiosity encouraged me to study software
+      development and continue working toward my goals.
+    </p>
+
+    <p>
+      My family is very important to me. My kids motivate me to keep learning
+      and improving every day. I believe that
+      <span id="word1">__________</span>
+      and dedication can help us accomplish our goals.
+    </p>
+
+    <p>
+      When I have free time, I enjoy spending time with my family. We like
+      watching movies, going for walks, and simply enjoying time together.
+      These moments remind me that
+      <span id="word2">__________</span>
+      is one of the most important parts of life.
+    </p>
+
+    <p>
+      As I continue my education, I hope to become more confident with
+      technology and develop useful skills for my future. I know that
+      <span id="word3">__________</span>
+      can sometimes be difficult, but I am willing to keep practicing and
+      learning from my mistakes.
+    </p>
+
+    <p>
+      One of my biggest goals is to create better opportunities for myself
+      and my family. I want to continue moving forward with
+      <span id="word4">__________</span>
+      and never give up on my dreams.
+    </p>
+
+    <hr>
+
+    <h2>JavaScript Words</h2>
+
+    <p>
+      <button type="button" onclick="document.getElementById('word1').innerHTML = word1">
+        Reveal Word 1
+      </button>
+
+      <button type="button" onclick="document.getElementById('word2').innerHTML = word2">
+        Reveal Word 2
+      </button>
+
+      <button type="button" onclick="document.getElementById('word3').innerHTML = word3">
+        Reveal Word 3
+      </button>
+
+      <button type="button" onclick="document.getElementById('word4').innerHTML = word4">
+        Reveal Word 4
+      </button>
+    </p>
+
+    <address>
+      <p>
+        <a href="https://www.bellevue.edu">Bellevue University</a>
+      </p>
+      <p>1000 Galvin Road South</p>
+      <p>Bellevue, NE 68005</p>
+    </address>
+
+  </div>
+
+  <script>
+    var word1 = "patience";
+    var word2 = "family";
+    var word3 = "learning";
+    var word4 = "perseverance";
+  </script>
+
+</body>
+</html>
