@@ -1,0 +1,82 @@
+<!--
+Name: Perla Garcia Cavazos
+Date: October 1, 2026
+Assignment: 10.3 JavaScript Exercise, Part 2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1F3A5F;
+        }
+
+        img {
+            width: 400px;
+            max-width: 90%;
+            margin: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .instructions {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+    </style>
+
+    <script>
+        function changeFirstImage() {
+            document.getElementById("firstImage").src = "images/20yrslater.jpg";
+        }
+
+        function changeSecondImage() {
+            document.getElementById("secondImage").src = "images/familiade5.jpg";
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+    <h2>Family Through the Years</h2>
+
+    <p class="instructions">
+        Click each image to see how our family has changed through the years.
+    </p>
+
+    <div>
+        <img id="firstImage"
+             src="images/2006tuyyo.jpg"
+             alt="Family memory from earlier years"
+             onclick="changeFirstImage()">
+
+        <p>Click the image to see another special memory.</p>
+    </div>
+
+    <div>
+        <img id="secondImage"
+             src="images/familiade4.jpg"
+             alt="Family together"
+             onclick="changeSecondImage()">
+
+        <p>Click the image to see our family grow.</p>
+    </div>
+
+</body>
+
+</html>
