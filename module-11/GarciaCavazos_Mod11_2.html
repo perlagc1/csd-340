@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Name: Perla Garcia Cavazos
+    Date: October 6, 2026
+    Assignment: 11.2 - JavaScript Exercise, Part 3
+    -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #todoInput {
+            padding: 8px;
+            width: 250px;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #display {
+            margin-top: 25px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+
+    <p>
+        Enter a task in the text box and click Add.
+        Use Delete Last Entry to remove the most recent task.
+        Click Sort to arrange the list alphabetically.
+    </p>
+
+    <input type="text" id="todoInput" placeholder="Enter a task">
+
+    <button onclick="addTask()">Add</button>
+    <button onclick="deleteLast()">Delete Last Entry</button>
+    <button onclick="sortTasks()">Sort</button>
+
+    <div id="display"></div>
+
+    <script>
+        // Array used to store the To Do List
+        let todoList = [];
+
+        // Adds a new task to the array
+        function addTask() {
+            let task = document.getElementById("todoInput").value.trim();
+
+            if (task === "") {
+                alert("Please enter a task.");
+                return;
+            }
+
+            todoList.push(task);
+
+            alert(task + " was added to the To Do List.");
+
+            document.getElementById("todoInput").value = "";
+
+            displayList();
+        }
+
+        // Deletes the last task from the array
+        function deleteLast() {
+            if (todoList.length === 0) {
+                alert("The To Do List is empty.");
+                return;
+            }
+
+            let deletedTask = todoList.pop();
+
+            alert(deletedTask + " was deleted from the To Do List.");
+
+            displayList();
+        }
+
+        // Displays the contents of the array
+        function displayList() {
+            let output = "<h2>Things To Do</h2>";
+
+            if (todoList.length === 0) {
+                output += "<p>No tasks have been added.</p>";
+            } else {
+                for (let i = 0; i < todoList.length; i++) {
+                    output += (i + 1) + ". " + todoList[i] + "<br>";
+                }
+            }
+
+            document.getElementById("display").innerHTML = output;
+        }
+
+        // Sorts the array alphabetically
+        function sortTasks() {
+            todoList.sort();
+
+            alert("The To Do List has been sorted.");
+
+            displayList();
+        }
+    </script>
+
+</body>
+</html>
